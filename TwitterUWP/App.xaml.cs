@@ -7,6 +7,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.ViewManagement;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -91,6 +92,7 @@ namespace TwitterUWP
                 titleBar.ButtonHoverForegroundColor = Windows.UI.Colors.White;
                 titleBar.ButtonHoverBackgroundColor = Windows.UI.Color.FromArgb(0xff, 0x1d, 0xca, 0xff);
 
+                SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
             }
         }
 

@@ -9,6 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <WebView Name="WebView_Main" NavigationCompleted="WebView_Main_OnNavigationCompleted"/>
+        <WebView Name="WebView_Main" NewWindowRequested="WebView_Main_NewWindowRequested" NavigationCompleted="WebView_Main_OnNavigationCompleted"/>
     </Grid>
 </Page>
