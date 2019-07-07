@@ -27,7 +27,7 @@ namespace TwitterUWP
         {
             this.InitializeComponent();
 
-            WebView_Main.Navigate(new Uri("https://twitter.com"));
+            WebView_Main.Navigate(new Uri("https://mobile.twitter.com"));//mobile版のURLを指定しないとブックマーク機能がない
 
             SystemNavigationManager.GetForCurrentView().BackRequested += (_, args) =>
             {
